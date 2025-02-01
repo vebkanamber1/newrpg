@@ -32,6 +32,12 @@ class Topor(pygame.sprite.Sprite):
         self.deg = start_deg
         self.timer_attack = 0
         self.topor = 1
+        self.bonus_topor= 1
+
+    def bonus_topor(self):
+        if pygame.spritecollide(self,spaider_group, False):
+
+
 
     def update(self, *args, **kwargs):
         self.rotate()
